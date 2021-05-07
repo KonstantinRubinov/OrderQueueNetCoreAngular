@@ -1,0 +1,14 @@
+<p class="right" *ngIf="users && users.length>0">רשימת ממתינים:</p>
+
+<table *ngIf="users && users.length>0" id="WaitingOrderTable">
+    <tr>
+        <td *ngFor="let header of myHeaders" class="border">{{ header }}</td>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.userOrderNumber}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.userTime | date:'hh:mm' }}</td>
+    </tr>
+</table>
+
+<p class="center" *ngIf="!users || users.length==0">אין אנשים בתור</p>

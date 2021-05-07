@@ -1,0 +1,14 @@
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+  }

@@ -1,0 +1,15 @@
+<form #myform="ngForm">
+    <div class="form-row">
+        <div class="form-group col-md-4 item">
+            <label for="UserName" *ngIf="usernameInfo.errors?.required && usernameInfo.touched" class="inputValidation ErrorColor">חסר שם הלקוח</label>
+            <label for="UserName" *ngIf="usernameInfo.errors?.minlength && usernameInfo.touched" class="inputValidation ErrorColor">מינימום 2 אותיות</label> 
+            <label for="UserName" *ngIf="(!usernameInfo.errors?.required || !usernameInfo.touched) && (!usernameInfo.errors?.minlength || !usernameInfo.touched)">שם הלקוח</label>
+        </div>
+        <div class="form-group col-md-4 item">
+            <input #usernameInfo="ngModel" required minlength="2" type="text" name="userName" id="userName" [(ngModel)]="userToAdd.userName" placeholder="שם הלקוח">
+        </div>
+        <div class="form-group col-md-4 item">
+            <button [disabled]="myform.form.invalid" (click)="AddToOrder()">הכנס לתור</button>
+          </div>
+    </div>
+</form>

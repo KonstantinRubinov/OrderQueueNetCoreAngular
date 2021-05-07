@@ -1,0 +1,12 @@
+
+.ErrorColor{
+    color: red;
+}
+form{
+    text-align: right;
+}
+
+input {
+    min-width: 100%;
+    max-width: 100%;
+}

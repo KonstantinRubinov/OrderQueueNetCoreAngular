@@ -1,0 +1,17 @@
+<div class="rightAlign">
+    <button (click)="CallNextUser()">קרא להבא בתור</button>
+</div>
+
+
+<table *ngIf="user" id="UserTable">
+    <tr>
+        <td *ngFor="let header of myHeaders" class="border">{{ header }}</td>
+    </tr>
+    <tr>
+        <td>{{user.userOrderNumber}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.userTime | date:'hh:mm' }}</td>
+    </tr>
+</table>
+
+<p *ngIf="!user">אין אנשים בשירות</p>

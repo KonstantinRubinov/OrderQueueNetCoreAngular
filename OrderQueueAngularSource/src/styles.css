@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    padding-top: 50px;
+    display: table-cell;
+    align-items: center;
+}

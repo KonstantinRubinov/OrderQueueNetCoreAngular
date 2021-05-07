@@ -1,0 +1,16 @@
+p{
+    text-align: center;
+}
+
+.rightAlign{
+    text-align: start;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+  }
